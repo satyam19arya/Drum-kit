@@ -46,21 +46,3 @@ function makeSound(key){
 document.addEventListener("keypress",function(event){
     makeSound(event.key);
 });
-
-
-document.querySelector(".random-beat").addEventListener("click", function () {
-    let numberOfRandomBeat = 10;
-    let randomPlayer = setInterval(() => {
-      const randomNoteArrayIndex = Math.floor(
-        Math.random() * (document.querySelectorAll(".drum").length + 1)
-      );
-      const selectedNote = document.querySelectorAll("button")[
-        randomNoteArrayIndex
-      ];
-  
-      makeSound(selectedNote.innerHTML);
-      buttonAnimation(selectedNote.innerHTML);
-  
-      numberOfRandomBeat--;
-    }, 150);
-  });

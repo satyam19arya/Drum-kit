@@ -75,21 +75,3 @@ footer{
   color: white;
   cursor: pointer;
 }
-
-.random-beat{
-  border: 7px solid #404B69;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #212122;
-  margin-bottom: 3rem;
-  padding: 4px 5px;
-}
-
-.random-beat:hover{
-  color: black;
-  background-color: white;
-  cursor: pointer;
-}
